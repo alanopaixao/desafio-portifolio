@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-bg-color: #22212c;
+  --text-color: #837e9f;
+  --bg-cards: #302f3d;
+  --bg-techs: #cb92b1;
+}
+
+body {
+  background-color: var(--body-bg-color);
+  color: var(--text-color);
+  font-family: "Ubuntu", sans-serif;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 400px auto;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
+i {
+  margin-right: 10px;
+  font-size: 1.2rem;
+  width: 20px;
+  text-align: center;
+}
+p {
+  margin: 5px 0;
+}
+
+.container {
+  background-color: var(--bg-cards);
+  border-radius: 15px;
+  margin: 20px 10px;
+  padding: 35px;
+}
+
+/* =============== */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-profile {
+  border-radius: 50%;
+  height: 200px;
+}
+
+.text-profile {
+  text-align: center;
+  margin-top: 30px;
+}
+.data {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.data-item {
+  display: flex;
+  align-items: center;
+}
+
+.technology-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: var(--bg-techs);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  padding: 5px;
+  border: none;
+  border-radius: 30px;
+}
+
+.experience-box,
+.education-box {
+  margin-top: 20px;
+}
+
+.experience-box_item,
+.education-box_item {
+  margin: 10px 0 0 10px;
+}
+
+.experience-box_item > h2,
+.education-box_item > h2 {
+  text-decoration: dashed;
+}
+
+.experience-box_item > p,
+.education-box_item > p {
+  margin-left: 10px;
+}
+
+.my-projects-folder {
+  display: flex;
+}
+.title-project {
+  display: flex;
+}
+
+.footer-project,
+.footer-project_numbers,
+.footer-project_numbers_stars,
+.footer-project_numbers_pull,
+.footer-project_language {
+  display: flex;
+}
+.footer-project {
+  justify-content: space-between;
+}
+
+.my-projects-folder-file {
+  background-color: var(--bg-cards);
+  border-radius: 15px;
+  margin: 0 10px;
+  padding: 35px;
+}
+
+.my-projects-folder-file > p {
+  margin: 25px 0;
+}
+
+.footer-project_numbers_pull {
+  margin-left: 20px;
+}
+
+.fa-circle-dot {
+  color: orange;
+}
+
+.img-post {
+  border-radius: 50%;
+  height: 120px;
+}
+
+.post {
+  display: flex;
+  gap: 30px;
+}
+
+.post-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.post-footer ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+footer {
+  text-align: center;
+  padding: 20px 0;
+}
